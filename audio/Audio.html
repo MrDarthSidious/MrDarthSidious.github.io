@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        img{
+            width:40%;
+                cursor:pointer
+        }
+    </style>
+</head>
+<body>
+  <img id="darth" src="https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-wiquhr_3528045b.jpeg?region=0%2C0%2C1200%2C600"alt="Darth Sidious">  
+  <audio src="ray_gun-Mike_Koenig-1169060422.ogg" ></audio>
+  
+    <script>
+ var img=document.getElementById('darth');
+		
+	img.addEventListener('click',function(e) {
+		var audio=document.getElementsByTagName('audio')[0];
+		
+		audio.src="ray_gun-Mike_Koenig-1169060422.mp3";
+	});
+    </script>
+      
+          
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Embed</title>
+    <style>
+        img {
+            width: 40%;
+            cursor: pointer;
+        }
+        
+        figcaption {
+            margin-top: -23px;
+        }
+    </style>
+</head>
+<body>
+    <iframe width="400" height="300" src="http://y8.com" frameborder="1"></iframe>
+    
+    <iframe src="tag1_structure.html" frameborder="0"></iframe>
+    
+    <iframe src="doc/CEMC-Poster-NA-small.pdf" frameborder="0"></iframe>
+
+        <br>
+    
+    <img src="img/puppy.jpg" alt="">
+    
+    <figure>
+        <img id="puppy" src="img/puppy.jpg" alt="">
+        <figcaption>Retriever</figcaption>
+    </figure>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11677.219954302598!2d-81.3289289!3d42.971848650000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1490657384132" width="200" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    <audio src="" autoplay></audio>    
+    <audio controls>
+        <source src="audio/thunder.mp3">
+        <source src="audio/thunder.ogg">
+    </audio>    
+    
+    <video controls loop poster="video/tree-falling-leaves-900.jpg">
+        <source src="video/tree-falling-leaves.mp4">
+        <source src="video/tree-falling-leaves.ogv">
+        <source src="video/tree-falling-leaves.webm">
+    </video>
+    
+    <script>
+    var img=document.getElementById('puppy');
+        
+    img.addEventListener('click',function(e) {
+        var audio=document.getElementsByTagName('audio')[0];
+        audio.src="audio/thunder.mp3";
+    });
+    </script>
+    
+    
+    
+</body>
+</html>
