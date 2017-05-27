@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Colour</title>
+    <style>
+        body {
+            background-color: aquamarine
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        
+        tr {
+            font-family: sans-serif
+        }
+        
+        .black {
+            color: white;
+        }
+        
+        .black .hex_color {
+            background-color: #000000;
+        }
+        
+        .black .rgb_color {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .black .name_color {
+            background-color: black;
+        }
+        
+        .black .hsl_color {
+            background-color: hsl(0, 0%, 0%);
+        }
+        
+        .white .hex_color {
+            background-color: #ffffff;
+        }
+        
+        .white .rgb_color {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .white .name_color {
+            background-color: white;
+        }
+        
+        .white .hsl_color {
+            background-color: hsl(0, 0%, 100%)
+        }
+        
+        .red .hex_color {
+            background-color: #FF0000
+        }
+        
+        .red .rgb_color {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+        
+        .red .name_color {
+            background-color: red;
+        }
+        
+        .red .hsl_color {
+            background-color: hsl(0, 100%, 50%);
+        }
+        
+        .lime .hex_color {
+            background-color: #00FF00;
+        }
+        
+        .lime .rgb_color {
+            background-color: rgb(0, 255, 0);
+        }
+        
+        .lime .name_color {
+            background-color: lime;
+        }
+        
+        .lime .hsl_color {
+            background-color: hsl(120, 100%, 50%);
+        }
+        
+        .hex_color {
+            background-color: #0000FF;
+        }
+        
+        .blue .rgb_color {
+            background-color: rgb(0, 0, 255);
+        }
+        
+        .blue .name_color {
+            background-color: blue;
+        }
+        
+        .blue .hsl_color {
+            background-color: hsl(240, 100%, 50%);
+        }
+        
+        .yellow .hex_color {
+            background-color: #FFFF00;
+        }
+        
+        .yellow .rgb_color {
+            background-color: rgb(255, 255, 0);
+        }
+        
+        .yellow .name_color {
+            background-color: yellow;
+        }
+        
+        .yellow .hsl_color {
+            background-color: hsl(60, 100%, 50%);
+        }
+        
+        .aqua .hex_color {
+            background-color: #00FFFF;
+        }
+        
+        .aqua .rgb_color {
+            background-color: rgb(0, 255, 255);
+        }
+        
+        .aqua .name_color {
+            background-color: aqua;
+        }
+        
+        .aqua .hsl_color {
+            background-color: hsl(180, 100%, 50%);
+        }
+        
+        .magenta .hex_color {
+            background-color: #FF00FF;
+        }
+        
+        .magenta .rgb_color {
+            background-color: rgb(255, 0, 255);
+        }
+        
+        .magenta .name_color {
+            background-color: magenta;
+        }
+        
+        .magenta .hsl_color {
+            background-color: hsl( 300, 100%, 50%);
+        }
+        
+        #example {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        #example1 {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+        
+        img {
+            width: 315px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>HEX</th>
+            <th>RGB</th>
+            <th>NAME</th>
+            <th>HSL</th>
+        </tr>
+        <tr class="black">
+            <td class="hex_color">#000000</td>
+            <td class="rgb_color">rgb(0,0,0)</td>
+            <td class="name_color">black</td>
+            <td class="hsl_color">hsl(0,0%,0%)</td>
+        </tr>
+        <tr class="white">
+            <td class="hex_color">#ffffff</td>
+            <td class="rgb_color">rgb(255,255,255)</td>
+            <td class="name_color">white</td>
+
+            <td class="hsl_color">hsl(0,0%,100%)</td>
+        </tr>
+        <tr class="red">
+            <td class="hex_color">#FF0000</td>
+            <td class="rgb_color">rgb(255,0,0)</td>
+            <td class="name_color">red</td>
+            <td class="hsl_color">hsl(0,100%,50%)</td>
+        </tr>
+        <tr class="lime">
+            <td class="hex_color">#00FF00</td>
+            <td class="rgb_color">rgb(0,255,0)</td>
+            <td class="name_color">lime</td>
+            <td class="hsl_color">hsl(120,100%,50%)</td>
+        </tr>
+        <tr class="blue">
+            <td class="hex_color">#0000FF</td>
+            <td class="rgb_color">rgb(0,0,255)</td>
+            <td class="name_color">blue</td>
+            <td class="hsl_color">hsl(240,100%,50%)</td>
+        </tr>
+        <tr class="yellow">
+            <td class="hex_color">#FFFF00</td>
+            <td class="rgb_color">rgb(255,255,0)</td>
+            <td class="name_color">yellow</td>
+            <td class="hsl_color">hsl(60,100%,50%)</td>
+        </tr>
+        <tr class="aqua">
+            <td class="hex_color">#00FFFF</td>
+            <td class="rgb_color">rgb(0,255,255)</td>
+            <td class="name_color">aqua </td>
+            <td class="hsl_color">hsl(180,100,50%)</td>
+        </tr>
+        <tr class="magenta">
+            <td class="hex_color">#FF00FF</td>
+            <td class="rgb_color">rgb(255,0,255)</td>
+            <td class="name_color">magenta</td>
+            <td class="hsl_color">hsl(300,100%,50%)</td>
+        </tr>
+    </table>
+    <h1>Alpha channel or Opacity or Transparency</h1>
+    <h3>Use rgba(255,0,0,0.5) function</h3>
+    <div id="example"></div>
+    <div id="example1"></div>
+    <br>
+    <img src="http://images.techtimes.com/data/images/full/163412/falloutvaultboythumbsup.jpg" alt="">
+</body>
+
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Font homework</title>
+    <style>
+        h2 {
+            color: tomato;
+            font-family: monospace;
+            font-size: 3em;
+            text-shadow: 3px 3px 0px grey;
+        }
+        
+        p:first-line {
+            font-weight: bold;
+            font-family: monospace;
+        }
+        
+        p {
+            line-height: 1.5em;
+            text-indent: 33px;
+        }
+        
+        span {
+            text-transform: uppercase;
+            color: teal;
+            font-size: 2em;
+        }
+        
+        p.ref {
+            font-style: italic;
+            letter-spacing: 1px;
+            text-align: right;
+            text-decoration: underline
+        }
+        
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Windows 10</h2>
+    <p><span>Windows 10</span> is a personal computer operating system released by Microsoft as part of the Windows NT family of operating systems. It was officially unveiled in September 2014 following a brief demo at Build 2014. The first version of the operating system entered a public beta testing process in October 2014, leading up to its consumer release on July 29, 2015,[3] and its release to volume licensing on August 1, 2015. To encourage the adoption of Windows 10, Microsoft announced that during its first year of availability, upgrades to the operating system would be made available free of charge to users of genuine copies of eligible editions of Windows 7, and Windows 8 after update to Windows 8.1.</p>
+    <p class="ref">https://en.wikipedia.org/wiki/Windows_10</p>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Margin</title>
+	<style>
+		* {
+			padding: 0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		
+		div {
+			border-style: solid dashed;
+			border-width: 10px;
+			width: 700px;
+			color: orange;
+			text-align: center;
+			padding: 80px 50px;
+			background-color: greenyellow;
+			
+			margin: 0 auto;
+		}
+		
+		h1 {
+			color: blue;
+			font-size: 3em;
+			font-family: monospace
+		}
+		
+		p {
+			font-size: 1.5em;
+			font-family: monospace;
+			
+			margin-bottom: 30px;
+		}
+		
+		hr {
+			width: 120px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: blue;
+			
+			margin: 30px auto;
+		}
+		
+		label {
+			font-family: monospace;
+			font-size: 1.5em;
+		}
+		
+		#email {
+			width: 249px;
+			height: 28px;
+		}
+		
+		.btn {
+			color: orange;
+			border-radius: 5px 5px 5px 5px;
+			border: solid;
+			width: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1>Teens Programming </h1>
+		
+		<hr>
+
+		<p>Supporting a well-spent life, a bright career and entrepreneurship Promoting STEM education Science - Technology - Engineering -Math</p>
+		<label>Email</label>
+		<input id='email' name="email" type="email">
+		<input class="btn" type="submit">
+	</div>
+
+</body>
+
+</html>

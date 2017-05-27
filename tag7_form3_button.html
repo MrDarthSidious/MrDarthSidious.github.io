@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+</head>
+
+<style>
+    input,button{
+        border: solid 2px tomato;
+        background-color: aquamarine;
+        width: 100px;
+        border-radius: 15px;
+        
+    }
+    
+    button{
+        width: 200px;
+    }
+    button img{
+        width:100px;
+    }
+    </style>
+<body>
+   <form action="">
+    <h1>Submit</h1>
+    <input type="submit" value="Ok">
+    
+    <h1>Input Button</h1>
+    <input type="button" value="Cancel">
+     
+     <h1>Image Button</h1>
+     <input id="changeImg" type="image" src="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2016/MIT-Earth-Dish_0.jpg" onclick="changeImg()">
+     
+     <h1>Complex Button</h1>
+     <button>
+         <img src="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2016/MIT-Earth-Dish_0.jpg" alt="">
+         <span>Black Hole Button</span>
+     </button>
+    </form>  
+    
+     <script>
+      var
+      changeImgBtn=document.getElementById('changeImg');
+       var change = true;
+         changeImgBtn.addEventListener('click', changeImg);
+         
+         function changeImg(event) {
+             event.preventDefault();
+            if(change){ changeImgBtn.src="http://cooldigital.photography/wp-content/uploads/2015/08/demon-child-zombie-bloody-mouth.jpg"
+         }else{
+             changeImgBtn.src="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2016/MIT-Earth-Dish_0.jpg"
+         }
+             change=!change;
+                 }
+    </script> 
+</body>
+</html>

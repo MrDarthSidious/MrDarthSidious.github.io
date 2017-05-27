@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			padding-left: 50px;
+		}
+		
+		fieldset {
+			padding: 16px;
+		}
+		
+		.label {
+			display: inline-block;
+			width: 133px;
+		}
+		
+		.info {
+			width: 186px;
+		}
+		
+		fieldset,
+		textarea {
+			width: 400px;
+			/*			height: auto;*/
+		}
+		
+		#submit {
+			padding-left: 189px;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="anyServerResource.php" method="post">
+		<fieldset>
+			<legend>Payment</legend>
+			<label class='label'>Name:</label>
+			<input class="info" type="text" placeholder="Please enter your Name">
+			<br>
+			<label class='label'>Email:</label>
+			<input class="info" type="text" placeholder="Please enter your Email">
+			<br>
+			<label class='label'>Phone:</label>
+			<input class="info" type="text" placeholder="Please enter your Phone Number">
+			<br>
+			<label class='label'>City:</label>
+			<select class='info' name="city" id="city">
+				<option value="">Toronto</option>
+				<option value="">London</option>
+			</select>
+			<br>
+			<label class='label'> Payment Options:</label>
+			<input type="radio" name="payment"> Master
+			<input type="radio" name="payment"> Paypal
+			<input type="radio" name="payment"> Visa
+		</fieldset>
+		<textarea name="" id="" cols="40" rows="10"></textarea>
+		<br>
+		<div id="submit">
+			<label>Thanks for your feedback</label>
+			<input type="submit">
+		</div>
+	</form>
+</body>
+
+</html>

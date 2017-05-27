@@ -93,3 +93,197 @@
 
 </body>
 </html>
+
+Tom's Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Assignment</title>
+    <style>
+        table {
+            background: black;
+            padding: 5px 10px;
+            color:dodgerblue;
+            font-family: impact;
+            border-color: cornflowerblue;
+            border-collapse: collapse;
+            
+        }
+        td,th {
+            padding: 5px 10px;
+        }
+        td {
+            color: white;
+            transition: all 1s linear;
+            position:relative;
+            right: 0;
+            
+        }
+        td:hover {
+            color:turquoise;
+            
+        }
+        #white {
+            background-color: white;
+            color: black;
+        }
+        #red {
+            background-color: red;
+        }
+        #lime {
+            background-color: lime;
+        }
+        #blue {
+            background-color:blue;
+        }
+        #yellow {
+            background-color: yellow;
+            color: black;
+        }
+        #aqua {
+            background-color: aqua;
+        }
+        #magenta {
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+   <table border>
+       <tr>
+           <td>HEX</td>
+           <td>RGB</td>
+           <td>NAME</td>
+           <td>HSL</td>
+       </tr>
+       <tr>
+           <td>#000000</td>
+           <td>(0,0,0)</td>
+           <td>black</td>
+           <td>360, 100%, 0%</td>
+       </tr>
+       <tr>
+           <td id="white">#ffffff</td>
+           <td id="white">(255,255,255)</td>
+           <td id="white">white</td>
+           <td id="white">360%, 100%, 100%</td>
+       </tr>
+       <tr>
+           <td id="red">#ff0000</td>
+           <td id="red">(255,0,0)</td>
+           <td id="red">red</td>
+           <td id="red">360%, 100%, 50%</td>
+       </tr>
+       <tr>
+           <td id="lime">#00ff00</td>
+           <td id="lime">(0,255,0)</td>
+           <td id="lime">lime</td>
+           <td id="lime">120%, 100%, 50%</td>
+       </tr>
+       <tr>
+           <td id="blue">#0000ff</td>
+           <td id="blue">(0,0,255)</td>
+           <td id="blue">blue</td>
+           <td id="blue">240%, 100%, 50%</td>
+       </tr>
+       <tr>
+           <td id="yellow">#ffff00</td>
+           <td id="yellow">(255,255,0)</td>
+           <td id="yellow">yellow</td>
+           <td id="yellow">60%, 100%, 50%</td>
+       </tr>
+       <tr>
+           <td id="aqua">#00ffff</td>
+           <td id="aqua">(0,255,255)</td>
+           <td id="aqua">aqua</td>
+           <td id="aqua">180%, 100%, 50%</td>
+       </tr>
+       <tr>
+           <td id="magenta">#ff00ff</td>
+           <td id="magenta">(255,0,255)</td>
+           <td id="magenta">magenta</td>
+           <td id="magenta">300%, 100%, 50%</td>
+       </tr>
+       
+   </table>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment</title>
+    <style>
+        .select {
+            -webkit-appearance: menulist-button;   
+            width: 500px;
+        }
+        label {
+            width: 130px;
+            display: inline-block;
+        }
+        fieldset {
+            box-shadow: 0px 0px 5px;
+            border: solid 10px grey;
+            width: 500px;
+            
+        }
+        legend {
+            background-color: lightgray;
+            font-family: monospace;
+            font-size: 15px;
+            box-shadow: 0px 0px 20px;
+        }
+        input {
+            height: 20px;
+            font-size: 10px;
+            border-radius: 10px;
+        }
+        textarea {
+            box-shadow: 0px 2px 4px
+        }
+    </style>
+</head>
+
+<body>
+    <form action="anyServerResource.php" method="get" class="select">
+        <fieldset>
+            <legend>Payment</legend>
+            <label for="">Name:</label>
+            <input type="text" name="name" placeholder="John Johnson">
+            <br>
+            <label for="">Email:</label>
+            <input type="email" name="email" placeholder="example@website.com">
+            <br>
+            <label for="">Phone</label>
+            <input type="tel" name="phone" placeholder="999-999-9999">
+            <br>
+            <label for="">City:</label>
+            <select name="" id="">
+            <option value="london">London</option>
+            <option value="toronto">Toronto</option>
+            <option value="regina">Regina</option>
+            <option value="ottawa">Ottawa</option>
+            <option value="hamilton">Hamilton</option>
+            <option value="stratford">Stratford</option>
+            </select>
+            <input type="text" name="other-city" placeholder="Other city; Please specify">
+            <br>
+            <label for="">Payment Options:</label>
+            <input type="radio" name="Payment1"> Mastercard
+            <input type="radio" name="Payment2"> Visa
+            <input type="radio" name="payment3"> Paypal
+            <br>
+            <textarea name="" id="" cols="50" rows="10" placeholder="Your comments are appreciated"></textarea>
+            <br>
+            <input type="submit">
+        <br>
+        </fieldset>
+    </form>
+
+</body>
+</html>
