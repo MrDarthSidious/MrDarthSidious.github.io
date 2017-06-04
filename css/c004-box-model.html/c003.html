@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: solid blue;
+            height: 300px;
+        }
+        
+        .item {
+            width: 300px;
+            height: 200px;
+            background: linear-gradient(lightblue, blue);
+            position: relative;
+            right: 50px;
+        }
+        
+        .abcontainer{
+/*            position: relative;*/
+        }
+        .absolute{
+            position: absolute;
+            top: 10px;
+        }
+        
+        .fixed{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Relative is Relative to it's own original postition</h3>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+    <h3>Absolute is relative to the nearest ancester whose postion is non-staric (Relative, Absolute,fixed etc</h3>
+    <div class="container abcontainer">
+        <div class="item absolute"></div>
+    </div> 
+    
+    <h3>Fixed is realitive to the viewport </h3>
+    <div class="container">
+        <div class="item fixed">
+        </div>
+    </div>
+</body>
+
+</html>
