@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        
+        #container{
+            width: 600px;
+            height: 400px;
+            background-color: blueviolet;
+            
+            
+        }
+        
+        #container:before{
+            content:'ghost';
+           
+         
+            border-right: solid red 3px;
+            
+            height: 100%;
+            background-color: red;
+            display: inline-block;
+        }
+        
+        #item{
+            width: 400px;
+            border: solid orange 3px;
+            background-color: grey;
+        
+        }
+        
+       
+        
+    </style>
+    
+</head>
+<body>
+    
+    <div id="container">
+        <div id="item">Content Here</div>
+    </div>
+    
+</body>
+</html>
