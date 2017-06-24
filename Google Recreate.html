@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Google</title>
 
-    <style>
-        button,
-        input,
-        #logo {
-            margin-left: 50px;
-            width: 400px;
-            text-align: center;
-        }
-        
-        #dots {
-            width: 20px;
-            background-position: right
-        }
-        
-        .top {
-            vertical-align: middle;
-            display: inline-block;
-            margin-left: 10px;
-        }
-        
-        #icon {
-            width: 30px;
-            height: 30px;
-            background-color: red;
-            border-radius: 30px;
-        }
-        
-        button {
-            width: 175px;
-            height: 30px;
-        }
-        
-        a {
-            font-size: 10px;
-        }
-        
-        #tops {
-            position: absolute;
-            right: 10px;
-        }
-        
-        #caption {
-            left: 00px;
-            color: aqua;
-        }
-    </style>
+<head>
+	<meta charset="UTF-8">
+	<title>Google</title>
+
+	<style>
+		button,
+		input,
+		#logo {
+			margin-left: 50px;
+			width: 400px;
+			text-align: center;
+		}
+		
+		#dots {
+			width: 20px;
+			background-position: right
+		}
+		
+		.top {
+			vertical-align: middle;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		
+		#icon {
+			width: 30px;
+			height: 30px;
+			background-color: red;
+			border-radius: 30px;
+		}
+		
+		button {
+			width: 175px;
+			height: 30px;
+		}
+		
+		a {
+			font-size: 10px;
+			text-decoration: none;
+			color: black;
+		}
+		
+		#tops {
+			position: absolute;
+			right: 10px;
+		}
+		
+		#caption {
+			position: relative;
+			left: -120px;
+			top:-30px;
+		}
+	</style>
 </head>
 
 <body>
 
-    <div id="tops">
-        <a href="gmail.com">Gmail</a>
-        <a href="">Images</a>
-        <img src="https://static1.squarespace.com/static/538c71f8e4b0371e6dad5b7f/t/5391c624e4b07e80b7d6e923/1402062372930/" alt="" id="dots" class="top">
-        <div class="top" id="icon"></div>
-    </div>
-    <br>
-    <img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.2-hp.gif" alt="" id="logo">
-    <caption id="caption">Canada</caption>
-    <br>
-    <input type="text">
-    <br>
-    <br>
-    <button>Google Search</button>
-    <button>I'm Feeling Lucky</button>
+	<div id="tops">
+		<a href="https://mail.google.com">Gmail</a>
+		<a href="https://www.google.ca/imghp?hl=en&tab=wi&ei=b0VFWZOkDIeUjwSXxKPYCQ&ved=0EKouCBYoAQ">Images</a>
+		<img src="https://static1.squarespace.com/static/538c71f8e4b0371e6dad5b7f/t/5391c624e4b07e80b7d6e923/1402062372930/" alt="" id="dots" class="top">
+		<div class="top" id="icon"></div>
+	</div>
+
+	<br>
+	<div id="content" align="center">
+		<img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.2-hp.gif" alt="" id="logo">
+
+		<span id="caption">Canada</span>
+		<br>
+		<input type="text" placeholder="Search a URL">
+		<br>
+		<br>
+		<button>Google Search</button>
+		<button><a href="https://www.google.com/doodles">I'm feeling lucky</a> 
+		</button>
+	</div>
 </body>
+
 </html>
